@@ -20,7 +20,7 @@
 				qs = qs.substring(qs.indexOf('"')+1, qs.length);
 			}
 			else {
-				var splits = qs.substring(0, qs.indexOf('"')-1).split(" ");
+				var splits = qs.substring(0, qs.indexOf('"')).split(" ");
 				for (var i=0; i<splits.length; i++)
 					words.push(splits[i]);
 				qs = qs.substring(qs.indexOf('"'), qs.length);
